@@ -19,7 +19,7 @@ class AutoDetailList(generics.RetrieveAPIView):
 #создание авто всех характеристик
 class CreateAuto(generics.CreateAPIView):
     queryset = AutoTechCHar.objects.all()
-    serializer_class = AutoListSerializer
+    serializer_class = AutoCreateSerializer
 
 #создание марки
 class CreateAutoBrand(generics.CreateAPIView):
